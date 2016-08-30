@@ -11,6 +11,7 @@ public class ActionResult {
 	private boolean status;
 	
 	public Object getData() {
+		System.out.println("inside get Data");
 		return data;
 	}
 	public void setData(Object data) {
