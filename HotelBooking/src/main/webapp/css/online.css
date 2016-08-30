@@ -1,0 +1,124 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+body{
+	//background-image:url("../images/BeyondTraffic2045_0.png")
+}
+.jumbotron{
+	//border: 1px solid blue;
+	//height: 50px;
+}
+.jb{
+//border: 1px solid red;
+//height: 50px;
+}
+header{
+	border:1px dotted #99ccff;
+	background-color: #99ccff;
+}
+header .jumbotron{
+//border:1px dotted gray;
+}
+header h3{
+	text-align: center;
+}
+.container{
+//border: 1px solid yellow;
+overflow: hidden;
+}
+.background{
+	//background-color: skyblue;
+	
+	/*height: 350px;*/
+}
+.container-fluid{
+	//border: 1px solid yellow;
+	text-align: center;
+	margin-top: 10px;
+	background-color:  #f2f2f2;
+}
+
+.clear{
+	clear: both;
+}
+/* footer {
+text-align: ce
+} */
+.copyright{
+	//background-color: #eee;
+	text-align: center;
+	height: 75px;
+	font-size: 25px;
+}
+.r1{
+	//border:1px dotted green;
+}
+.heading {
+    //border: 1px dotted red;
+    bottom: 20px;
+    
+    position: relative;
+}
+.hed h2{
+	color:green;
+	font-size: 30px;
+}
+
+/* Set the fixed height of the footer here */
+footer {
+ 
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+    
+}
+/* Custom page CSS
+-------------------------------------------------- */
+footer > a > span {
+  padding: 0 125px;
+  text-align: center;
+}
+.gtlogin{
+	//border:1px solid red;
+	text-align:center;
+}
+.gtuser{
+	//border:1px solid blue;
+}
+.span1{
+	text-align: center;
+}
+.pad{
+	margin:0px 5px 0px 5px;
+}
+.sub{
+	margin-top:-10px;
+	margin-bottom:10px;
+	//border:1px solid red;
+}
+.subs{
+	//border:1px solid red;
+}
+.subclass{
+	//border:1px solid blue;
+	width:120px;
+	color:lightblue;
+}
+#loadAllRoomLogout{
+   position:fixed;
+   top:110px;
+   right:140px;
+}
+#customerLogout{
+   position:static;
+   top:-150px;
+   right:0px;
+}
+#CustomerDetailsBox{
+	height : 500px; 
+	margin: -25px 0px 0px 0px;
+}

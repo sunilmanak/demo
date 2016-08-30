@@ -1,0 +1,69 @@
+<style>
+*{
+	margin:0px;
+	padding: 0px;
+}
+.jumbotron{
+	text-align: center;
+}
+
+</style>
+<div class="container" data-ng-controller="loadAllRoomsController">
+
+
+    <div class="row clearfix">
+		<div class="col-md-12 column">
+		<article id="loadAllRoomLogout">
+				<h4>
+				<button type="button" class="btn btn-primary" data-ng-click="logout()"> Logout</buttton>
+				</h4>
+		</article>
+			<table class="table table-bordered table-hover" id="tab_logic">
+				<thead style="background-color: #e6f3ff">
+					<tr >
+						<th class="text-center">
+							Room Number
+						</th>
+						<th class="text-center">
+							Availability
+						</th>
+						<th class="text-center">
+							Check-in-Time
+						</th>
+						<th class="text-center">
+							Check-out-Time
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr id='addr0' data-ng-repeat="room in rooms">
+						<td align="center">
+						 <a href="#/showDetails/{{room.roomNumber}}"> 
+						 {{room.roomNumber}}
+						 </a>
+						</td>
+						
+						<td align="center" data-ng-switch="room.avilable">
+						
+						<img src="./images/okay.jpg" width="42" height="42" data-ng-switch-when="true"/>
+						
+						<img src="./images/cross.png" width="42" height="42"  data-ng-switch-default/>
+						
+						</td>
+						<td align="center" data-ng-switch="room.avilable">
+						<span data-ng-switch-default> {{room.checkINTime}}</span>
+						<a data-ng-switch-when="true" href="#/customerDetails/{{room.roomNumber}}"> 
+						 <input type="button" class="btn btn-info" value="Book Room"> </a>
+						</td>
+						<td align="center">
+						{{room.checkOUTTime}}
+						</td>						
+					</tr>
+                    <tr id='addr1'></tr>
+				</tbody>
+			</table>
+		</div>
+		
+	</div>
+	
+</div>

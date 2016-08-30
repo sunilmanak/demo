@@ -1,0 +1,85 @@
+<div class="container" data-ng-controller="customerDetailsController">
+<div class="alert alert-success" id="TicketDetailSuccess">
+		  <strong> Details!</strong> 
+		  <ul>
+	        <li id="TicketDetailSuccessMSG" data-ng-model="statusmsg"></li>
+	      </ul>
+   </div>
+   <div class="row">
+		<div class="alert alert-danger" id="UserLoginError">
+			<strong>Error Details!</strong>
+			<ul>
+				<li data-ng-repeat="error in errors">{{error}}</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+	    
+		<div class="col-sm-1"></div>
+		<div class="col-sm-3" id="CustomerDetailsBox">
+			<article>
+				<h2>Customer Details</h2>
+				<form>
+					<div class="form-group">
+						<label for="email"> Customer First Name:</label>
+						 <input type="text" class="form-control"  placeholder="Customer First Name" 
+						 data-ng-model="customerDetails.firstName" required="true">
+						 
+						 <label for="email"> Customer Last Name:</label>
+						 <input type="text" class="form-control"  placeholder="Customer Last Name" 
+						 data-ng-model="customerDetails.lastName" required="true">
+						 
+											
+					</div>
+					<div class="form-group">
+						<label for="">Mobile Number:</label> <input type="text"
+							placeholder="Mobile No. " class="form-control" data-ng-model="customerDetails.mobile">
+							 <label>Photo Id:</label>
+						<div class="fileinput fileinput-new" data-provides="fileinput">
+							<span class="btn btn-default btn-file"><span></span><input
+								type="file" id="file"/></span>
+						</div>	
+					</div>					
+				</form>
+			</article>
+		</div>
+		<div class="col-sm-3">
+		<br/><br/>
+			<div class="form-group">
+				<label>Check In Time:</label>
+				<div class="input-group input-append date" id="checkInDate">
+					<input type="text" class="form-control" data-ng-model="customerDetails.checkInDate" /> <span
+						class="input-group-addon add-on"><span
+						class="glyphicon glyphicon-calendar"></span></span>
+				</div>
+				<label>Check Out Time:</label>
+				<div class="input-group input-append date" id="checkOutDate">
+					<input type="text" class="form-control" data-ng-model="customerDetails.checkOutDate"  /> <span
+						class="input-group-addon add-on"><span
+						class="glyphicon glyphicon-calendar"></span></span>
+				</div>
+			</div>
+			<div class="form-group">
+						<label>Address:</label>
+						<textarea class="form-control" rows="3" id="comment" cols="150"
+							placeholder="Enter your Address" data-ng-model="customerDetails.address"></textarea>
+		  </div>
+		  <div class="form-group">
+					
+					 <button type="button" class="btn btn-info btn-md active" data-ng-click="customerDetailsme()">Save</button>
+				   </div>
+		</div>
+		<div class="col-sm-2">
+		</div>
+		<div class="col-sm-1">		 
+               <!-- <article id="customerLogout"> -->
+                <h4>
+				<button type="button" class="btn btn-primary" data-ng-click="logout()"> Logout</buttton>
+				</h4>
+				<!-- <a type="button" class="btn btn-primary" href="#/loadAllRooms"> Logout</buttton> -->
+				<!-- </article> -->
+				<a type="button" class="btn btn-primary" href="#/loadAllRooms"> Back <-</a>
+		</div>
+	</div>
+	
+</div>

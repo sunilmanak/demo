@@ -1,0 +1,45 @@
+<div class="bs-example container"  data-ng-controller="showDetailsController">
+        <article id="loadAllRoomLogout">
+				<a type="button" class="btn btn-primary" data-ng-click="logout()"> Logout</a>
+				&nbsp;
+				<a type="button" class="btn btn-primary" href="#/loadAllRooms"> Back <-</a>
+		</article>
+    <table class="table">
+       <tbody>
+           <tr class="success">
+                <td align="Center">First Name : </td>
+                <td align="left">{{customer.firstName}}</td>
+               
+            </tr>
+             <tr class="info">
+                <td align="Center">Last Name : </td>
+                <td align="left">{{customer.lastName}}</td>
+               
+            </tr>
+             <tr class="success">
+                <td align="Center">Mobile : </td>
+                <td align="left"> {{customer.mobile}}</td>
+               
+            </tr>
+             <tr class="info">
+                <td align="Center">Check In Date : </td>
+                <td align="left">{{customer.checkInDate}}</td>
+               
+            </tr>
+             <tr class="success">
+                <td align="Center">Check Out Date : </td>
+                <td align="left">{{customer.checkOutDate}}</td>
+               
+            </tr>
+              <tr class="info">
+                <td align="Center">Address : </td>
+                <td align="left">{{customer.address}}</td>
+               
+            </tr>
+           <tr class="success">
+                <td align="Center">Room Number : </td>
+                <td align="left">{{customer.roomNumber}}</td>               
+            </tr>            
+        </tbody>
+    </table>
+</div>
